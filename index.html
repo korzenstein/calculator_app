@@ -29,9 +29,13 @@
                 <label for="3">3</label>
               </div>
               <div class="radioThemes">
-                <input name="themes" id="1" type="radio" />
-                <input name="themes" id="2" type="radio" />
-                <input name="themes" id="3" type="radio" />
+                <input name="themes" id="1" type="radio" class="radio" checked="checked"
+                onclick="purple()" />
+                <span class="newRadio"></span>
+                <input name="themes" id="2" type="radio" class="radio" onclick="black()"/>
+                <span class="newRadio"></span>
+                <input name="themes" id="3" type="radio" class="radio"/ onclick="orange()">
+                <span class="newRadio"></span>
               </div>
               </div>
             </form>
@@ -39,7 +43,7 @@
           <!-- RESULT DISPLAY -->
           <div class="output"><p id="display">0</p></div>
           <!-- CALCULATOR BUTTONS -->
-          <ul class="buttonGroup flex">
+          <ul class="buttonGroup">
             <li class="buttonRow">
               <button class="button">7</button>
               <button class="button">8</button>
