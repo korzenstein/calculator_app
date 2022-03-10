@@ -14,7 +14,7 @@
   </head>
   <body>
       <!-- MAIN - BACKGROUND -->
-      <main>
+      <main class="main">
         <!-- GENERAL CONTAINER -->
         <section class="calcContainer wrapper">
           <!-- HEADER - TITLE & THEME OPTIONS -->
@@ -30,11 +30,11 @@
               </div>
               <div class="radioThemes">
                 <input name="themes" id="1" type="radio" class="radio" checked="checked"
-                onclick="purple()" />
+                onclick="themeOne()" />
                 <span class="newRadio"></span>
-                <input name="themes" id="2" type="radio" class="radio" onclick="black()"/>
+                <input name="themes" id="2" type="radio" class="radio" onclick="themeTwo()"/>
                 <span class="newRadio"></span>
-                <input name="themes" id="3" type="radio" class="radio"/ onclick="orange()">
+                <input name="themes" id="3" type="radio" class="radio"/ onclick="themeThree()">
                 <span class="newRadio"></span>
               </div>
               </div>
@@ -48,7 +48,7 @@
               <button class="button">7</button>
               <button class="button">8</button>
               <button class="button">9</button>
-              <button class="button">DEL</button>
+              <button class="button delete">DEL</button>
             </li>
             <li class="buttonRow">
               <button class="button">4</button>
@@ -69,8 +69,8 @@
               <button class="button">*</button>
             </li>
             <li class="buttonRow large">
-              <button class="button">RESET</button>
-              <button id="equals" class="button">=</button>
+              <button class="button reset">RESET</button>
+              <button id="equals" class="button eqauls">=</button>
             </li>
           </ul>
         </section>

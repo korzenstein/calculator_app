@@ -273,7 +273,6 @@ html {
   font-family: "Spartan", sans-serif;
   font-size: 125%;
   width: 100vw;
-  background-color: teal;
 }
 
 .wrapper {
@@ -282,7 +281,7 @@ html {
   width: 70%;
 }
 
-main {
+.main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -380,7 +379,7 @@ form {
 .output {
   width: 100%;
   margin-top: 10px;
-  background-color: blanchedalmond;
+  background-color: none;
   padding: 30px 20px;
   border-radius: 10px;
 }
@@ -401,6 +400,7 @@ button {
   border-radius: 7px;
   text-align: center;
   width: 25%;
+  color: white;
 }
 
 .buttonGroup {
@@ -437,8 +437,48 @@ button {
   width: 50%;
 }
 
-.orange {
-  background-color: orangered;
+.oneBg {
+  background-color: #3a4764;
+}
+
+.oneToggle {
+  background-color: #232c43;
+}
+
+.oneScreen {
+  background-color: #182034;
+}
+
+.oneKeyBgBlue {
+  background-color: #637097;
+}
+
+.oneKeyShadowBlue {
+  background-color: #404e72;
+}
+
+.oneKeyBgRed {
+  background-color: #d03f2f;
+}
+
+.oneKeyShadowRed {
+  border-color: #93261a;
+}
+
+.oneKeyGrOrange {
+  background-color: #eae3dc;
+}
+
+.oneKeyShadowOrange {
+  background-color: #b4a597;
+}
+
+.oneTextGrBlue {
+  color: #444b5a;
+}
+
+.oneTextWhite {
+  color: white;
 }
 
 .purple {

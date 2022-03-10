@@ -1,26 +1,37 @@
 let display = document.getElementById("display");
 let buttons = Array.from(document.getElementsByClassName("button"));
 
-let radios = Array.from(document.getElementsByClassName("radio"));
+
+let main = document.querySelector(".main")
+let output = document.querySelector(".output")
 let buttonGroup = document.querySelector(".buttonGroup");
+let butt = document.querySelector(".button");
+let equals = document.getElementById("equals");
+
 
 // Toggle Themes Functionality
 
 (() => {
-  purple()
+  themeOne()
 })();
 
-function purple() {
-    buttonGroup.classList.remove("orange", "black");
-    buttonGroup.classList.add("purple");
+function themeOne() {
+    main.classList.add("oneBg");
+    output.classList.add("oneScreen")
+    buttonGroup.classList.add("oneScreen")
+    butt.classList.add("oneKeyGrOrange")
+    equals.classList.add("oneKeyBgRed", "oneKeyShadowRed")
+
 }
 
-function black() {
+
+
+function themeTwo() {
     buttonGroup.classList.remove("purple", "orange");
     buttonGroup.classList.add("black");
 }
 
-function orange() {
+function themeThree() {
     buttonGroup.classList.remove("purple", "black");
     buttonGroup.classList.add("orange");
 }

@@ -2,32 +2,41 @@
 
 // Backgrounds
 
-$theme1bgMainDarkBlue: hsl(222, 26%, 31%);
-$theme1bgToggleDarkBlue: hsl(223, 31%, 20%);
-$theme1bgScreenDarkBlue: hsl(224, 36%, 15%);
-
+.oneBg {
+  background-color: hsl(222, 26%, 31%);
+}
+.oneToggle {
+  background-color: hsl(223, 31%, 20%);
+}
+.oneScreen {
+  background-color: hsl(224, 36%, 15%);
+}
 // Keys
 
-$theme1keysBgDeBlue: hsl(225, 21%, 49%);
-$theme1keysShadowDeBlue: hsl(224, 28%, 35%);
-$theme1keysBgRed: hsl(6, 63%, 50%);
-$theme1keysShadowRed: hsl(6, 70%, 34%);
-$theme1keysGrayOrange: hsl(30, 25%, 89%);
-$theme1keysShadowOrange: hsl(28, 16%, 65%);
+.oneKeyBgBlue {
+  background-color: hsl(225, 21%, 49%);
+}
+.oneKeyShadowBlue {
+  background-color: hsl(224, 28%, 35%);
+}
+.oneKeyBgRed {
+  background-color: hsl(6, 63%, 50%);
+}
+.oneKeyShadowRed {
+  border-color: hsl(6, 70%, 34%);
+}
+.oneKeyGrOrange {
+  background-color: hsl(30, 25%, 89%);
+}
+.oneKeyShadowOrange {
+  background-color: hsl(28, 16%, 65%);
+}
 
 // Text
 
-$theme1textGrayBlue: hsl(221, 14%, 31%);
-$theme1textWhite: hsl(0, 0, 100%);
-
-.orange {
-  background-color: orangered;
+.oneTextGrBlue {
+  color: hsl(221, 14%, 31%);
 }
-
-.purple {
-  background-color: purple;
-}
-
-.black {
-  background-color: black;
+.oneTextWhite {
+  color: hsl(0, 0, 100%);
 }
