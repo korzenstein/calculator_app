@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/styles.css" />
+  </head>
+  <body>
+      <!-- MAIN - BACKGROUND -->
+      <main>
+        <!-- GENERAL CONTAINER -->
+        <section class="calcContainer wrapper">
+          <!-- HEADER - TITLE & THEME OPTIONS -->
+          <header>
+            <h1>calc</h1>
+            <div class="formContainer">
+              <h3>theme</h3>
+            <form class="toggler">
+              <div class="numbersThemes">
+                <label for="1">1</label>
+                <label for="2">2</label>
+                <label for="3">3</label>
+              </div>
+              <div class="radioThemes">
+                <input name="themes" id="1" type="radio" />
+                <input name="themes" id="2" type="radio" />
+                <input name="themes" id="3" type="radio" />
+              </div>
+              </div>
+            </form>
+          </header>
+          <!-- RESULT DISPLAY -->
+          <div class="output"><p id="display">0</p></div>
+          <!-- CALCULATOR BUTTONS -->
+          <ul class="buttonGroup flex">
+            <li class="buttonRow">
+              <button class="button">7</button>
+              <button class="button">8</button>
+              <button class="button">9</button>
+              <button class="button">DEL</button>
+            </li>
+            <li class="buttonRow">
+              <button class="button">4</button>
+              <button class="button">5</button>
+              <button class="button">6</button>
+              <button class="button">+</button>
+            </li>
+            <li class="buttonRow">
+              <button class="button">1</button>
+              <button class="button">2</button>
+              <button class="button">3</button>
+              <button class="button">-</button>
+            </li>
+            <li class="buttonRow">
+              <button class="button">.</button>
+              <button class="button">0</button>
+              <button class="button">/</button>
+              <button class="button">*</button>
+            </li>
+            <li class="buttonRow large">
+              <button class="button">RESET</button>
+              <button id="equals" class="button">=</button>
+            </li>
+          </ul>
+        </section>
+      </main>
+    <script src="main.js"></script>
+  </body>
+</html>
