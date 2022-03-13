@@ -1,7 +1,47 @@
-.purple {
-  background-color: purple;
+// Theme 2
+
+// Backgrounds
+
+.twoBgGray {
+  background-color: hsl(0, 0%, 90%);
 }
 
-.black {
-  background-color: black;
+.twoBgRedish {
+  background-color: hsl(0, 5%, 81%);
+}
+
+.twoBgLightGray {
+  background-color: hsl(0, 0%, 93%);
+}
+
+// Keys
+
+.twoKeysModCyan {
+  background-color: hsl(185, 42%, 37%);
+}
+
+.twoKeysDarkCyan {
+  box-shadow: 0px 1px 0px hsl(185, 58%, 25%);
+}
+
+.twoKeysOrange {
+  background-color: hsl(25, 98%, 40%);
+}
+.twoKeysDarkOrg {
+  box-shadow: 0px 1px 0px hsl(25, 99%, 27%);
+}
+.twoKeysLtYellow {
+  background-color: hsl(45, 7%, 89%);
+}
+.twoKeysDarkGrayOrg {
+  box-shadow: 0px 1px 0px hsl(35, 11%, 61%);
+}
+
+// Text
+
+.twoTextDarkGr {
+  color: hsl(60, 10%, 19%);
+}
+.twoTextWhite {
+  color: hsl(0, 0, 100%);
 }

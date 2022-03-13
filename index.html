@@ -19,14 +19,14 @@
         <section class="calcContainer wrapper">
           <!-- HEADER - TITLE & THEME OPTIONS -->
           <header>
-            <h1>calc</h1>
+            <h1 class="title textA">calc</h1>
             <div class="formContainer">
-              <h3>theme</h3>
+              <h3 class="subtitle textA">theme</h3>
             <form class="toggler">
               <div class="numbersThemes">
-                <label for="1">1</label>
-                <label for="2">2</label>
-                <label for="3">3</label>
+                <label class="toggleLabels textA" for="1">1</label>
+                <label class="toggleLabels textA" for="2">2</label>
+                <label class="toggleLabels textA" for="3">3</label>
               </div>
               <div class="radioThemes">
                 <input name="themes" id="1" type="radio" class="radio" checked="checked"
@@ -41,36 +41,36 @@
             </form>
           </header>
           <!-- RESULT DISPLAY -->
-          <div class="output"><p id="display">0</p></div>
+          <div class="output textA"><p id="display">0</p></div>
           <!-- CALCULATOR BUTTONS -->
-          <ul class="buttonGroup">
+          <ul class="buttonGroup backs">
             <li class="buttonRow">
-              <button class="button">7</button>
-              <button class="button">8</button>
-              <button class="button">9</button>
-              <button class="button delete">DEL</button>
+              <button class="button primaryButton">7</button>
+              <button class="button primaryButton">8</button>
+              <button class="button primaryButton">9</button>
+              <button class="button secondaryButton deleteButton">DEL</button>
             </li>
             <li class="buttonRow">
-              <button class="button">4</button>
-              <button class="button">5</button>
-              <button class="button">6</button>
-              <button class="button">+</button>
+              <button class="button primaryButton">4</button>
+              <button class="button primaryButton">5</button>
+              <button class="button primaryButton">6</button>
+              <button class="button primaryButton">+</button>
             </li>
             <li class="buttonRow">
-              <button class="button">1</button>
-              <button class="button">2</button>
-              <button class="button">3</button>
-              <button class="button">-</button>
+              <button class="button primaryButton">1</button>
+              <button class="button primaryButton">2</button>
+              <button class="button primaryButton">3</button>
+              <button class="button primaryButton">-</button>
             </li>
             <li class="buttonRow">
-              <button class="button">.</button>
-              <button class="button">0</button>
-              <button class="button">/</button>
-              <button class="button">*</button>
+              <button class="button primaryButton">.</button>
+              <button class="button primaryButton">0</button>
+              <button class="button primaryButton">/</button>
+              <button class="button primaryButton">*</button>
             </li>
             <li class="buttonRow large">
-              <button class="button reset">RESET</button>
-              <button id="equals" class="button eqauls">=</button>
+              <button class="button resetButton secondaryButton">RESET</button>
+              <button id="equals" class="button equalsButton">=</button>
             </li>
           </ul>
         </section>

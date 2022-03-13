@@ -327,13 +327,15 @@ header {
   border-radius: 10px;
 }
 
-h1 {
+.title {
   font-size: 1.2rem;
+  color: none;
 }
 
-h3 {
+.subtitle {
   font-size: 0.5rem;
   text-transform: uppercase;
+  color: none;
 }
 
 .formContainer {
@@ -370,14 +372,13 @@ form {
 }
 
 .radioThemes {
-  background-color: blanchedalmond;
   border-radius: 10px;
   width: 100%;
-  background-color: blue;
 }
 
 .output {
   width: 100%;
+  height: 100px;
   margin-top: 10px;
   background-color: none;
   padding: 30px 20px;
@@ -389,18 +390,25 @@ form {
   font-size: 2rem;
   font-weight: 700;
   margin: 0;
+  color: none;
 }
 
-button {
+.button {
+  border-color: none;
   font-family: inherit;
-  padding: 10px 0;
+  padding: 12px 0 9px 0;
   font-size: 1.2rem;
   display: block;
   margin: 0;
   border-radius: 7px;
   text-align: center;
   width: 25%;
-  color: white;
+  color: none;
+  opacity: 1;
+  background-color: none;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .buttonGroup {
@@ -416,7 +424,6 @@ button {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  background-color: blanchedalmond;
   padding: 20px;
 }
 
@@ -427,6 +434,12 @@ button {
   display: flex;
   width: 100%;
   margin-bottom: 15px;
+}
+
+.resetButton,
+.deleteButton,
+.equalsButton {
+  font-size: 0.8rem;
 }
 
 .large {
@@ -454,7 +467,8 @@ button {
 }
 
 .oneKeyShadowBlue {
-  background-color: #404e72;
+  -webkit-box-shadow: 0px 1px 0px #404e72;
+          box-shadow: 0px 1px 0px #404e72;
 }
 
 .oneKeyBgRed {
@@ -462,7 +476,8 @@ button {
 }
 
 .oneKeyShadowRed {
-  border-color: #93261a;
+  -webkit-box-shadow: 0px 1px 0px #93261a;
+          box-shadow: 0px 1px 0px #93261a;
 }
 
 .oneKeyGrOrange {
@@ -470,7 +485,8 @@ button {
 }
 
 .oneKeyShadowOrange {
-  background-color: #b4a597;
+  -webkit-box-shadow: 0px 1px 0px #b4a597;
+          box-shadow: 0px 1px 0px #b4a597;
 }
 
 .oneTextGrBlue {
@@ -481,10 +497,96 @@ button {
   color: white;
 }
 
-.purple {
-  background-color: purple;
+.twoBgGray {
+  background-color: #e6e6e6;
 }
 
-.black {
-  background-color: black;
+.twoBgRedish {
+  background-color: #d1cccc;
+}
+
+.twoBgLightGray {
+  background-color: #ededed;
+}
+
+.twoKeysModCyan {
+  background-color: #377f86;
+}
+
+.twoKeysDarkCyan {
+  -webkit-box-shadow: 0px 1px 0px #1b5f65;
+          box-shadow: 0px 1px 0px #1b5f65;
+}
+
+.twoKeysOrange {
+  background-color: #ca5502;
+}
+
+.twoKeysDarkOrg {
+  -webkit-box-shadow: 0px 1px 0px #893901;
+          box-shadow: 0px 1px 0px #893901;
+}
+
+.twoKeysLtYellow {
+  background-color: #e5e4e1;
+}
+
+.twoKeysDarkGrayOrg {
+  -webkit-box-shadow: 0px 1px 0px #a69d91;
+          box-shadow: 0px 1px 0px #a69d91;
+}
+
+.twoTextDarkGr {
+  color: #35352c;
+}
+
+.twoTextWhite {
+  color: white;
+}
+
+.threeVioletMain {
+  background-color: #160628;
+}
+
+.threeVioletToggle {
+  background-color: #1d0934;
+}
+
+.threeVioletKey {
+  background-color: #58077d;
+}
+
+.threeMagentaShadow {
+  -webkit-box-shadow: 0px 1px 0px #bc15f4;
+          box-shadow: 0px 1px 0px #bc15f4;
+}
+
+.threeCyanKey {
+  background-color: #00e0d1;
+}
+
+.threeCyanShadow {
+  -webkit-box-shadow: 0px 1px 0px #6cf9f2;
+          box-shadow: 0px 1px 0px #6cf9f2;
+}
+
+.threeDarkVioletKey {
+  background-color: #341c4f;
+}
+
+.threeMagentaShadow {
+  -webkit-box-shadow: 0px 1px 0px #871c9c;
+          box-shadow: 0px 1px 0px #871c9c;
+}
+
+.threeTextYel {
+  color: #ffe53d;
+}
+
+.threeTextBlue {
+  color: #1b2428;
+}
+
+.threeTextWhite {
+  color: white;
 }
