@@ -311,6 +311,8 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 header {
@@ -589,4 +591,10 @@ form {
 
 .threeTextWhite {
   color: white;
+}
+
+@media (max-width: 480px) {
+  .calcContainer {
+    width: 300px;
+  }
 }
