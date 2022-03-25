@@ -8,11 +8,14 @@ let buttonGroup = document.querySelector(".buttonGroup");
 let primaryButtons = document.querySelectorAll(".primaryButton");
 let secondaryButtons = document.querySelectorAll(".secondaryButton")
 let equals = document.querySelector(".equalsButton");
-// let title = document.querySelector(".title");
-// let subtitle = document.querySelector(".subtitle");
+
 let toggleLables = document.querySelector(".toggleLabels")
 let backgrounds = document.querySelectorAll(".backgrounds")
 let textA = document.querySelectorAll(".textA")
+let radio = document.getElementsByName("radio")
+// let radioBefore = window.getComputedStyle(radio, '::before')
+
+
 
 
 let allClasses = [main, output, buttonGroup, primaryButtons, secondaryButtons, equals, textA];
@@ -114,6 +117,12 @@ function themeThree() {
 
 // Calc Functionality
 
+if(display.innerText.length > 10) {
+  console.log('over');
+  
+}
+
+
 buttons.map((button) => {
   button.addEventListener("click", (e) => {
     switch (e.target.innerText) {
@@ -137,3 +146,15 @@ buttons.map((button) => {
     }
   });
 });
+
+// const mutationObserver = new MutationObserver(entries => {
+//   console.log(entries)
+// })
+
+// mutationObserver.observe(display, { childList: true });
+
+// function keepShort() {
+//   return(display.innerHTML.length >= 7 ? console.log('too long') : "")
+// }
+
+// keepShort();

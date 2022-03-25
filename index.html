@@ -29,19 +29,19 @@
                 <label class="toggleLabels textA" for="3">3</label>
               </div>
               <div class="radioThemes">
-                <input name="themes" id="1" type="radio" class="radio" checked="checked"
+                <!-- Radio One -->
+                <input name="themes" id="1" type="radio" class="radio" checked="checked" name="themes"
                 onclick="themeOne()" />
-                <span class="newRadio"></span>
-                <input name="themes" id="2" type="radio" class="radio" onclick="themeTwo()"/>
-                <span class="newRadio"></span>
-                <input name="themes" id="3" type="radio" class="radio"/ onclick="themeThree()">
-                <span class="newRadio"></span>
+                <!-- Radio Two -->
+                <input name="themes" id="2" type="radio" class="radio" name="themes"  onclick="themeTwo()"/>
+                <!-- Radio Three -->
+                <input name="themes" id="3" type="radio" class="radio" name="themes" onclick="themeThree()"/>
               </div>
               </div>
             </form>
           </header>
           <!-- RESULT DISPLAY -->
-          <div class="output textA"><p id="display">0</p></div>
+          <div class="output textA" on><p id="display">0</p></div>
           <!-- CALCULATOR BUTTONS -->
           <ul class="buttonGroup backs">
             <li class="buttonRow">
