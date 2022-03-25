@@ -12,9 +12,8 @@ let equals = document.querySelector(".equalsButton");
 let toggleLables = document.querySelector(".toggleLabels")
 let backgrounds = document.querySelectorAll(".backgrounds")
 let textA = document.querySelectorAll(".textA")
-let radio = document.getElementsByName("radio")
-// let radioBefore = window.getComputedStyle(radio, '::before')
-
+let radio = document.querySelectorAll('input[name="radio"]')
+let toggleBg = document.querySelector(".radioThemes")
 
 
 
@@ -30,6 +29,8 @@ function themeOne() {
     secondaryButtons.forEach(sb => sb.classList.remove("twoKeysModCyan", "twoTextWhite" , "twoKeysDarkCyan"))
     equals.classList.remove("twoKeysOrange", "twoKeysDarkOrg", "twoTextWhite")
     textA.forEach(text => text.classList.remove("twoTextDarkGr"))
+    toggleBg.classList.remove("twoBgRedish")
+    radio.forEach(rad => rad.classList.remove("twoRadioOrange"))
     // Remove Theme Three
     main.classList.remove("threeVioletMain");
     output.classList.remove("threeVioletToggle")
@@ -38,13 +39,17 @@ function themeOne() {
     secondaryButtons.forEach(sb => sb.classList.remove("threeVioletKey", "threeTextWhite" , "threeMagentaShadow"));
     equals.classList.remove("threeCyanKey", "threeCyanShadow", "threeTextBlue")
     textA.forEach(text => text.classList.remove("threeTextYel"))
+    toggleBg.classList.remove("threeVioletToggle")
+    radio.forEach(rad => rad.classList.remove("threeRadio")) 
 
     // THEME ONE:
     // Add New Theme
     main.classList.add("oneBg");
     output.classList.add("oneScreen")
     buttonGroup.classList.add("oneScreen")
+    toggleBg.classList.add("oneToggle")
         // group classes
+    radio.forEach(rad => rad.classList.add("oneRadioRed"))
     primaryButtons.forEach(pb => pb.classList.add("oneKeyGrOrange", "oneTextGrBlue", "oneKeyShadowOrange"))
     secondaryButtons.forEach(sb => sb.classList.add("oneKeyBgBlue", "oneTextWhite" , "oneKeyShadowBlue"))
     equals.classList.add("oneKeyBgRed", "oneKeyShadowRed", "oneTextWhite")
@@ -61,6 +66,8 @@ function themeTwo() {
     secondaryButtons.forEach(sb => sb.classList.remove("oneKeyBgBlue", "oneTextWhite" , "oneKeyShadowBlue"))
     equals.classList.remove("oneKeyBgRed", "oneKeyShadowRed", "oneTextWhite")
     textA.forEach(text => text.classList.remove("oneTextWhite"))
+    toggleBg.classList.remove("oneToggle")
+    radio.forEach(rad => rad.classList.remove("oneRadioRed"))
  // Remove Theme Three
     main.classList.remove("threeVioletMain");
     output.classList.remove("threeVioletToggle")
@@ -69,13 +76,17 @@ function themeTwo() {
     secondaryButtons.forEach(sb => sb.classList.remove("threeVioletKey", "threeTextWhite" , "threeMagentaShadow"));
     equals.classList.remove("threeCyanKey", "threeCyanShadow", "threeTextBlue")
     textA.forEach(text => text.classList.remove("threeTextYel"))
+    toggleBg.classList.remove("threeVioletToggle")
+    radio.forEach(rad => rad.classList.remove("threeRadio")) 
 
     // THEME TWO: 
     // Add New Theme
     main.classList.add("twoBgGray")
     output.classList.add("twoBgLightGray")
     buttonGroup.classList.add("twoBgRedish")
+    toggleBg.classList.add("twoBgRedish")
         // group classes
+    radio.forEach(rad => rad.classList.add("twoRadioOrange"))
     primaryButtons.forEach(pb => pb.classList.add("twoKeysLtYellow", "twoTextDarkGr", "twoKeysDarkGrayOrg"))
     secondaryButtons.forEach(sb => sb.classList.add("twoKeysModCyan", "twoTextWhite" , "twoKeysDarkCyan"))
     equals.classList.add("twoKeysOrange", "twoKeysDarkOrg", "twoTextWhite")
@@ -91,6 +102,8 @@ function themeThree() {
     secondaryButtons.forEach(sb => sb.classList.remove("oneKeyBgBlue", "oneTextWhite" , "oneKeyShadowBlue"))
     equals.classList.remove("oneKeyBgRed", "oneKeyShadowRed", "oneTextWhite")
     textA.forEach(text => text.classList.remove("oneTextWhite"))
+    toggleBg.classList.remove("oneToggle")
+    radio.forEach(rad => rad.classList.remove("oneRadioRed"))
     // Remove Theme Two
     main.classList.remove("twoBgGray")
     output.classList.remove("twoBgLightGray")
@@ -99,12 +112,16 @@ function themeThree() {
     secondaryButtons.forEach(sb => sb.classList.remove("twoKeysModCyan", "twoTextWhite" , "twoKeysDarkCyan"))
     equals.classList.remove("twoKeysOrange", "twoKeysDarkOrg", "twoTextWhite")
     textA.forEach(text => text.classList.remove("twoTextDarkGr"))
+    toggleBg.classList.remove("twoBgRedish")
+    radio.forEach(rad => rad.classList.remove("twoRadioOrange"))
 
     // Add New Theme
     main.classList.add("threeVioletMain");
     output.classList.add("threeVioletToggle")
     buttonGroup.classList.add("threeVioletToggle")
+    toggleBg.classList.add("threeVioletToggle")
         // group classes
+    radio.forEach(rad => rad.classList.add("threeRadio"))    
     primaryButtons.forEach(pb => pb.classList.add("threeDarkVioletKey", "threeTextYel", "threeMagentaShadow"));
     secondaryButtons.forEach(sb => sb.classList.add("threeVioletKey", "threeTextWhite" , "threeMagentaShadow"));
     equals.classList.add("threeCyanKey", "threeCyanShadow", "threeTextBlue")
@@ -116,12 +133,6 @@ function themeThree() {
 })();
 
 // Calc Functionality
-
-if(display.innerText.length > 10) {
-  console.log('over');
-  
-}
-
 
 buttons.map((button) => {
   button.addEventListener("click", (e) => {

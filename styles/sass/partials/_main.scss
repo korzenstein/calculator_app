@@ -46,21 +46,26 @@ header {
   color: none;
 }
 
-.subtitle {
-  font-size: 0.5rem;
-  text-transform: uppercase;
-  color: none;
-}
 .formContainer {
   display: flex;
   align-items: center;
   gap: 30px;
+  align-items: flex-end;
+  .subtitle {
+    font-size: 0.5rem;
+    text-transform: uppercase;
+    color: none;
+    padding-bottom: 7px;
+
+    h3 {
+      margin: 0;
+    }
+  }
 }
 
 .toggler {
   gap: 7px;
   display: flex;
-  justify-content: center;
   flex-direction: column;
 
   .numbersThemes {
@@ -75,16 +80,17 @@ header {
     gap: 7px;
     justify-content: space-evenly;
     cursor: pointer;
-    background-color: grey;
-    border-radius: 5px;
+    background-color: none;
+    border-radius: 40px;
+    padding: 5px;
 
-    input[type="radio"] {
+    .radio {
       appearance: none;
       cursor: pointer;
       margin: 0;
       width: 0.6em;
       height: 0.6em;
-      // border: 0.1em solid currentColor;
+      color: none;
       border-radius: 50%;
       position: relative;
     }
@@ -97,8 +103,10 @@ header {
       border-radius: 50%;
       transform: scale(0);
       transition: 120ms transform ease-in-out;
-      // box-shadow: inset 1em 1em blue;
-      box-shadow: inherit;
+      color: inherit;
+      box-shadow: inset 1em 1em;
+
+      // box-shadow: inherit;
     }
     input[type="radio"]:checked::before {
       transform: scale(1);
